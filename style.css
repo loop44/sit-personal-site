@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./img/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+}
+
+.portfolio {
+    width: 837px;
+    height: 633px;
+    background: #FFFFFF;
+    border: 8px solid #000000;
+    box-shadow: 16px 12px 0px #000000;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.header-inner {
+    background: #000000;
+    font-family: 'IBM Plex Mono', monospace;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 16px;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.circles {
+    display: flex;
+    gap: 8px;
+}
+
+.circles img {
+    width: 14px;
+    height: 14px;
+}
+
+.icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.ava img {
+    border: 20px solid #4F7BFF;
+    padding: 23px;
+}
+
+.content {
+    padding: 32px;
+    display: flex;
+    gap: 24px;
+    padding-top: 84px;
+}
+
+.about-me {
+    height: 470px;
+    padding-right: 30px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.name {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    color: #000000;
+    margin-bottom: 16px;
+}
+
+.degree {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.description {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.description span {
+    transition: all 0.1s ease-in-out;
+}
+
+.description span:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.study-span {
+    background-color: #7FFF5B;
+}
+
+.tech-span {
+    background-color: #FF5C5C;
+}
+
+h4 {
+    margin-top: 30px;
+    font-weight: 700;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 150%;
+    margin-bottom: 20px;
+}
+
+ul {
+    font-size: 24px;
+    line-height: 150%; 
+    padding-left: 40px;
+}
+
+li {
+    list-style: square;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    font-size: 24px;
+    line-height: 150%;
+    align-items: center;
+}
+
+.grid-header {
+    background-color: #4F7BFF;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+}
+
+.grid a {
+    padding: 10px;
+    background-color: #FF5C5C;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 40px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: 2px solid #000;
+}
+
+.footer-inner {
+    background-image: url(img/back-footer.png);
+    background-repeat: repeat-x;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 28px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.link img {
+    width: 24px;
+    height: 24px;
+}
+
+.link a {
+    font-family: 'IBM Plex Mono';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.location {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.video {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    right: 200px;
+    top: 100px;
+
+    background: #FFFFFF;
+    border: 8px solid #000000;
+    box-shadow: 16px 12px 0px #000000;
+
+    background-image: url(./img/gif.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.audio {
+    position: absolute;
+    width: 400px;
+    height: 115px;
+    right: 200px;
+    bottom: 100px;
+    background: #FFFFFF;
+    border: 8px solid #000000;
+    box-shadow: 16px 12px 0px #000000;
+}
+
+
+
+
+.audio-player {
+  position: relative;
+  top: 46px;
+  width: 358px;
+  padding: 18px 20px;
+  background-color: white;
+  border: 1px solid black;
+}
+.audio-player .player-controls {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.audio-player #radioIcon {
+  width: 30px;
+  height: 30px;
+  background: url("https://img.icons8.com/ios/50/000000/microphone.png") no-repeat center;
+  background-size: contain;
+}
+.audio-player #playAudio {
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  width: 30px;
+  height: 30px;
+  background: url("https://img.icons8.com/play") no-repeat center;
+  background-size: contain;
+}
+.audio-player #playAudio.pause {
+  background: url("https://img.icons8.com/pause") no-repeat center;
+  background-size: contain;
+}
+.audio-player p {
+  margin: 0 0 0 5px;
+  line-height: 1;
+  display: inline-flex;
+}
+.audio-player p small {
+  font-size: 10px;
+}
+.audio-player #seekObjContainer {
+  position: relative;
+  width: 300px;
+  margin: 0 5px;
+  height: 5px;
+}
+.audio-player #seekObjContainer #seekObj {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #e3e3e3;
+  border: 1px solid black;
+}
+.audio-player #seekObjContainer #seekObj #percentage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: coral;
+}
+
+#currentTime {
+    display: none;
+}
+
+
+
+
+@media (max-width: 1624px) {
+    .name {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .degree {
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 20px;
+        gap: 16px;
+    }
+
+    h4 {
+        margin-top: 10px;
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .grid {
+        grid-gap: 6px;
+        font-size: 20px;
+    }
+    .grid a {
+        padding: 5px;
+        font-size: 16px;
+    }
+    .portfolio {
+        width: 770px;
+        top: 20px;
+        left: 20px;
+    }
+    .video {
+        top: 20px;
+        right: 20px;
+        width: 330px;
+    }
+    .audio {
+        right: 20px;
+        bottom: 20px;
+    }
+}

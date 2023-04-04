@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наговицын Данил</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="portfolio">
+        <header class="header">
+            <div class="header-inner">
+                <div class="circles">
+                    <img src="img/circle.png" alt="">
+                    <img src="img/circle.png" alt="">
+                    <img src="img/circle.png" alt="">
+                </div>
+                <div class="title">Портфолио.ru</div>
+                <div class="icon">
+                    <img src="img/icon..png" alt="">
+                </div>
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="ava">
+                <img src="img/ava.png" alt="" width="172" height="172">
+            </div>
+            <div class="about-me">
+                <h1 class="name">Наговицын Данил</h1>
+                <p class="degree">Студент 4 курса @ ИC</p>
+                <div class="description">
+                    <p>
+                        Привет! Меня зовут Данил 👾
+                    </p>
+
+                    <p>
+                        Я учусь на 4 курсе и увлекаюсь программированием (Frontend - разработкой)
+                    </p>
+
+                    <p>
+                        Далее, будет представлено мое портфолио, включая мои <span class="study-span">учебные проекты</span> и <span class="tech-span">рабочий стэк</span>
+                    </p>
+                </div>
+                <h4>Мои проекты</h4>
+                <div  class="grid">
+                    <div class="grid-header">Название проекта</div>
+                    <div class="grid-header">Ссылка на проект</div>
+
+                    <div>Конструктор бургеров</div>
+                    <div><a target="_blank" href="https://burger-constructor.netlify.app/">Открыть онлайн</a></div>
+
+                    <div>Мои заметки</div>
+                    <div><a target="_blank" href="http://note-me-eight.vercel.app/">Открыть онлайн</a></div>
+                    
+                    <div>Игра на сортировку</div>
+                    <div><a target="_blank" href="http://dnd-sort-game.vercel.app/">Открыть онлайн</a></div>
+                </div>
+
+                <h4>Рабочий стэк</h4>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>PHP</li>
+                </ul>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-inner">
+                <div class="links">
+                    <div class="link">
+                        <img src="./img/social-icons/mail.svg">
+                        <a target="_blank" href="mailto:danilnagovitsyn404@gmail.com">danilnagovitsyn404@gmail.com</a>
+                    </div>
+                    <div class="link">
+                        <img src="./img/social-icons/github.svg">
+                        <a target="_blank" href="https://github.com/loop44">loop44</a>
+                    </div>
+                </div>
+                <div class="location">
+                    Votkinsk, UDM
+                </div>
+            </div> 
+        </footer>
+    </div>
+
+    <div class="video">
+        <header class="header">
+            <div class="header-inner">
+                <div class="circles">
+                    <img src="img/circle.png" alt="">
+                    <img src="img/circle.png" alt="">
+                    <img src="img/circle.png" alt="">
+                </div>
+                <div class="title">player.mp4</div>
+            </div>
+        </header>
+    </div>
+
+    <div class="audio">
+        <header class="header">
+            <div class="header-inner">
+                <div class="circles">
+                    <img src="img/circle.png" alt="">
+                    <img src="img/circle.png" alt="">
+                    <img src="img/circle.png" alt="">
+                </div>
+                <div class="title">audio.mp3</div>
+            </div>
+        </header>
+        <div class="audio-player">
+          <audio id="audio">
+            <source src="https://thenewcode.com/assets/audio/24-ghosts-III.mp3" type="audio/mp3">
+          </audio>
+          <div class="player-controls">
+            <div id="radioIcon"></div>
+            <button id="playAudio"></button>
+            <div id="seekObjContainer">
+              <div id="seekObj">
+                <div id="percentage"></div>
+              </div>
+            </div>
+            <p><small id="currentTime">00:00</small></p>
+          </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
